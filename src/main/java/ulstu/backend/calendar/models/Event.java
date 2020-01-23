@@ -42,6 +42,6 @@ public class Event {
     @ManyToOne
     private User user;
 
-   // @OneToMany(mappedBy = "event")
-   // private List<File> files;
+    @OneToMany(mappedBy = "event")
+    private List<File> files;
 }
